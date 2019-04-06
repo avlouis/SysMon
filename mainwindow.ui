@@ -10,6 +10,11 @@
     <height>300</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Monospace</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -17,6 +22,41 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
+   <widget class="SMClock" name="clock" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+     </font>
+    </property>
+   </widget>
+   <widget class="SMAstro" name="astro" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="SMDonutPlot" name="ramDonut" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -54,6 +94,26 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SMDonutPlot</class>
+   <extends>QWidget</extends>
+   <header>smdonutplot.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SMClock</class>
+   <extends>QWidget</extends>
+   <header>smclock.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SMAstro</class>
+   <extends>QWidget</extends>
+   <header>smastro.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

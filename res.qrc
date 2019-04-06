@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/cert">
+        <file>apiusnonavymil.crt</file>
+    </qresource>
+</RCC>
